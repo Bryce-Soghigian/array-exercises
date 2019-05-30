@@ -5,6 +5,12 @@
  * Given an array of numbers, return a sum total of all the numbers.
  */
 function sum (numbers) {
+  if(!Array.isArray(numbers)) return;
+  let totalNumber = 0, i=-1;
+  while (++i < numbers.length) {
+     totalNumber+=numbers[i];
+  }
+  return totalNumber
   // TODO: Add your solution here.
 }
 
@@ -14,8 +20,12 @@ function sum (numbers) {
  * Given an array of numbers, return an array where each element is double its original value.
  */
 function doubleNumbers (numbers) {
+ let(i=0;i<numbers.length;i++){
+  let double = numbers(i*2)
+ }return double;
   // TODO: Add your solution here.
 }
+
 
 /**
  * @instruction
@@ -24,6 +34,9 @@ function doubleNumbers (numbers) {
  */
 function doubleCharacters (chars) {
   // TODO: Add your solution here.
+  for(let i=0;i<chars.length;i++){
+  chars.repeat(2);
+  }
 }
 
 /**
@@ -33,6 +46,9 @@ function doubleCharacters (chars) {
  */
 function backwardsify (array) {
   // TODO: Add your solution here.
+  
+  return array.reverse();
+  
 }
 
 /**
